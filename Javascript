@@ -1,0 +1,48 @@
+alert("Que operacion desea realizar?");
+
+let operacionUsuario =prompt(" 1- Suma \n 2- Resta \n 3- Multiplicacion \n 4- Division");
+
+if (operacionUsuario=== "1"){
+    numero1= parseInt(prompt("Ingresar primer numero"));
+    numero2= parseInt(prompt("Ingresar segundo numero"));
+    resultadoOperacion= numero1 + numero2;
+    if(isNaN(resultadoOperacion)){ // En caso el usuario escriba una letra
+        alert("El valor ingresado no es un numero")
+    } else{
+        document.write(resultadoOperacion);
+    }
+    
+}
+else if (operacionUsuario=== "2"){
+    numero1= parseInt(prompt("Ingresar primer numero"));
+    numero2= parseInt(prompt("Ingresar segundo numero"));
+    resultadoOperacion= numero1-numero2;
+    if(isNaN(resultadoOperacion)){ // En caso el usuario escriba una letra
+        alert("El valor ingresado no es un numero")
+    } else{
+        document.write(resultadoOperacion);
+    }
+}
+else if (operacionUsuario=== "3"){
+    numero1= parseInt(prompt("Ingresar primer numero"));
+    numero2= parseInt(prompt("Ingresar segundo numero"));
+    resultadoOperacion= numero1*numero2;
+    if(isNaN(resultadoOperacion)){ // En caso el usuario escriba una letra
+        alert("El valor ingresado no es un numero")
+    } else{
+        document.write(resultadoOperacion);
+    }
+}
+else if (operacionUsuario=== "4"){
+    numero1= parseInt(prompt("Ingresar primer numero"));
+    numero2= parseInt(prompt("Ingresar segundo numero"));
+    resultadoOperacion= numero1/numero2;
+    if(isNaN(resultadoOperacion)){ // En caso el usuario escriba una letra
+        alert("El valor ingresado no es un numero")
+    } else{
+        document.write(resultadoOperacion);
+    }
+
+} else{
+    alert("Ingrese una opcion valida")
+}
